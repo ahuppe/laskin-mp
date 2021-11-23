@@ -1,0 +1,11 @@
+input {
+    margin: 2px;
+    border: solid black 1px;
+}
+input:invalid {
+    border: solid red 2px;
+}
+#tulos {
+    background: yellow;
+    text-align: center;
+}
