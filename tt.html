@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>t2</title>
+    <link rel="stylesheet" href="css/1.css">
+</head>
+<body>
+<h1>Kämänen laskuri kahdelle reaaliluvulle.</h1>
+<p>Näyttää punasta niin kauan, kunnes kokonainen toimiva lasku on annettu. Mielenrauhan vuoksi desimaalierotin on piste.</p>
+<form onsubmit="return lisääyhteensä()">
+<input placeholder="Älä käytä välejä" required type="text" id="lasku" pattern="[-]?[0-9]+[.]?[0-9]*[\+\/\-\*]{1}[-]?[0-9]+[.]?[0-9]*">
+    <input type="submit" value="Laske (enter)">
+    <button id="plus">+</button>
+    <button id="miinus">-</button>
+    <button id="jako">/</button>
+    <button id="kerto">*</button>
+    <input type="reset" value="Tyhjennä">
+<hr>
+    <p id="tulos"></p>
+</form>
+<script src="laskuri.js"></script>
+</body>
+
+</html>
